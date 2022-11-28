@@ -7,6 +7,7 @@ direction = random(360);
 
 if sprite_index == spr_rock_big
 {
+	global.cameraShake = 4
 	sprite_index = spr_rock_small;
 	instance_copy(true);
 }
@@ -18,4 +19,5 @@ else if instance_number(obj_rock) < 12
 else
 {
 	instance_destroy();
+	global.cameraShake = 2
 }

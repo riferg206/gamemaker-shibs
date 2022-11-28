@@ -15,5 +15,5 @@ move_wrap(true, true, sprite_width/2)
 
 if mouse_check_button_pressed(mb_left)
 {
-	create_bullet(image_angle, bulletSpd, faction, id);
+	create_bullet(image_angle, bulletSpd+other.speed, faction, id, guns);
 }
